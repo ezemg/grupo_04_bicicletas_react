@@ -23,7 +23,7 @@ function SearchMovies() {
 				setMovies(data.Search)
 			})
 			.catch(error => console.error(error))
-	}, [keyword,])
+	}, [keyword, apiKey])
 
 
 

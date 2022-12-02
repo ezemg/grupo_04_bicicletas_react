@@ -23,10 +23,10 @@ function SearchMovies2() {
 
     const [movies, setMovies] = useState([])
 
-    console.log(movies)
+
 
     useEffect(() => {
-        console.log("se monto el componente");
+
         fetch(`http://www.omdbapi.com/?s=action&apikey=9c3e6836`)
             .then(response => response.json())
             .then(data => {
