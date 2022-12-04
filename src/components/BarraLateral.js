@@ -35,20 +35,20 @@ function BarraLateral() {
                 < li className="nav-item" >
                     <Link className="nav-link" to="/CategoriesInDb">
                         <i className="fas fa-fw fa-folder"></i>
-                        <span>Pages</span>
+                        <span>Categories</span>
                     </Link>
                 </li >
 
                 {/*<!-- Nav Item - Charts -->*/}
                 < li className="nav-item" >
-                    <Link className="nav-link" to="/LastMovieInDb">
+                    <Link className="nav-link" to="/LastProductInDb">
                         <i className="fas fa-fw fa-chart-area"></i>
-                        <span>Charts</span></Link>
+                        <span>Last Product</span></Link>
                 </li >
 
                 {/*<!-- Nav Item - Tables -->*/}
                 < li className="nav-item nav-link" >
-                    <Link className="nav-link" to="/ContentRowMovies">
+                    <Link className="nav-link" to="/ContentRowProducts">
                         <i className="fas fa-fw fa-table"></i>
                         <span>Tables</span></Link>
                 </li >

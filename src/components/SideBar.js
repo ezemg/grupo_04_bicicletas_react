@@ -1,10 +1,10 @@
 import React from 'react';
 import ContentWrapper from './ContentWrapper/ContentWrapper';
-import CategoriesInDb from './ContentWrapper/ContentRowTop/ContentRowCenter/CategoriesInDb';
-import LastMovieInDb from '../components/ContentWrapper/ContentRowTop/ContentRowCenter/LastMovieInDb';
-import ContentRowMovies from '../components/ContentWrapper/ContentRowTop/ContentRowMovies/ContentRowMovies';
+import CategoriesInDb from './ContentWrapper/ContentRowTop/ContentRowCenter/CategoriesInDb/CategoriesInDb';
+import LastProductInDb from './ContentWrapper/ContentRowTop/ContentRowCenter/LastProductInDb/LastProductInDb';
+import ContentRowProducts from './ContentWrapper/ContentRowTop/ContentRowProducts/ContentRowProducts';
 import NotFound from './NotFound';
-import { Link, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import BarraLateral from './BarraLateral';
 
 function SideBar() {
@@ -20,11 +20,11 @@ function SideBar() {
                 <Route path="/CategoriesInDb">
                     <CategoriesInDb />
                 </Route>
-                <Route path="/LastMovieInDb">
-                    <LastMovieInDb />
+                <Route path="/LastProductInDb">
+                    <LastProductInDb />
                 </Route>
-                <Route path="/ContentRowMovies">
-                    <ContentRowMovies />
+                <Route path="/ContentRowProducts">
+                    <ContentRowProducts />
                 </Route>
                 <Route component={NotFound} />
             </Switch>

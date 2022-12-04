@@ -1,5 +1,5 @@
 import React from "react";
-import imagenFondo from '../../../../assets/images/mandalorian.jpg'
+
 
 function Product(product) {
     return (
@@ -13,10 +13,10 @@ function Product(product) {
                     <h3>$ {product.price}</h3>
                     <h5>Categoría: {product.category.name}</h5>
                     <div className="text-center">
-                        <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{ width: 40 + 'rem' }} src={imagenFondo} alt=" Imagen Producto " />
+                        <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{ width: 40 + 'rem', height: 20 + 'rem' }} src={`/productos/${product.image}`} alt=" Imagen Producto " />
                     </div>
                     <p>{product.description}</p>
-                    <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">View movie detail</a>
+                    <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">Ver detalle del producto</a>
                 </div>
             </div>
         </div>

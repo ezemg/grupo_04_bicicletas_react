@@ -11,7 +11,7 @@ function CategoriesInDb() {
     fetch("http://localhost:3000/api/products/categories")
       .then(res => res.json())
       .then(data => {
-        setCategories(data.respuesta.categories)
+        setCategories(data.categories)
 
       })
       .catch(error => console.error(error))

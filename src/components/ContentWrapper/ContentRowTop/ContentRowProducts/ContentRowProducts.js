@@ -3,13 +3,8 @@ import SmallCard from './SmallCard';
 
 import { useState, useEffect } from 'react';
 
-/*  Cada set de datos es un objeto literal */
 
-/* <!-- Movies in DB --> */
-
-
-
-function ContentRowMovies() {
+function ContentRowProducts() {
 
     let [products, setProducts] = useState({})
     let [categories, setCategories] = useState({})
@@ -19,8 +14,7 @@ function ContentRowMovies() {
         fetch("http://localhost:3000/api/products")
             .then(res => res.json())
             .then(data => {
-                setProducts(data.respuesta)
-
+                setProducts(data)
             })
             .catch(error => console.error(error))
     }, [])
@@ -29,8 +23,7 @@ function ContentRowMovies() {
         fetch("http://localhost:3000/api/products/categories")
             .then(res => res.json())
             .then(data => {
-                setCategories(data.respuesta.categories)
-
+                setCategories(data.categories)
             })
             .catch(error => console.error(error))
     }, [])
@@ -39,8 +32,7 @@ function ContentRowMovies() {
         fetch("http://localhost:3000/api/users")
             .then(res => res.json())
             .then(data => {
-                setUsers(data.respuesta)
-
+                setUsers(data)
             })
             .catch(error => console.error(error))
     }, [])
@@ -53,16 +45,12 @@ function ContentRowMovies() {
         icon: 'fa-box'
     }
 
-    /* <!-- Total awards --> */
-
     let totalCategories = {
         title: ' Total de Categorias',
         color: 'success',
         cuantity: categories.length,
         icon: 'fa-list'
     }
-
-    /* <!-- Actors quantity --> */
 
     let usersQuantity = {
         title: 'Total de Usuarios',
@@ -87,4 +75,4 @@ function ContentRowMovies() {
     )
 }
 
-export default ContentRowMovies;
+export default ContentRowProducts;

@@ -11,7 +11,7 @@ function Chart() {
         fetch("http://localhost:3000/api/products")
             .then(res => res.json())
             .then(data => {
-                setProducts(data.respuesta.products)
+                setProducts(data.products)
             })
             .catch(error => console.error(error))
     }, [])
