@@ -3,6 +3,27 @@ import SmallCard from './SmallCard';
 
 import { useState, useEffect } from 'react';
 
+let productsInDB = {
+    title: 'Productos en Base de Datos',
+    color: 'primary',
+    cuantity: 'No data',
+    icon: 'fa-box'
+}
+
+let totalCategories = {
+    title: ' Total de Categorias',
+    color: 'success',
+    cuantity: 'No data',
+    icon: 'fa-list'
+}
+
+let usersQuantity = {
+    title: 'Total de Usuarios',
+    color: 'warning',
+    cuantity: 'No data',
+    icon: 'fa-user-check'
+}
+
 
 function ContentRowProducts() {
 
@@ -65,7 +86,7 @@ function ContentRowProducts() {
 
         <div className="row">
 
-            {cartProps.map((item, i) => {
+            {cartProps !== undefined && cartProps.length > 0 && cartProps.map((item, i) => {
 
                 return <SmallCard {...item} key={i} />
 
