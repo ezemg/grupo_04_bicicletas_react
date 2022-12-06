@@ -27,9 +27,13 @@ let usersQuantity = {
 
 function ContentRowProducts() {
 
-    let [products, setProducts] = useState({})
-    let [categories, setCategories] = useState({})
-    let [users, setUsers] = useState({})
+
+
+    let [products, setProducts] = useState({ count: 'No data' })
+    let [categories, setCategories] = useState([])
+    let [users, setUsers] = useState({ count: 'No data' })
+
+    console.log(products)
 
     useEffect(() => {
         fetch("http://localhost:3000/api/products")

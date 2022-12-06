@@ -24,14 +24,14 @@ function SmallCard(props) {
 
 /* DEFINICIÓN DE PROPIEDADES POR DEFAULT */
 
-SmallCard.defaultProps = {
-    title: 'No Title',
-    color: 'success',
-    cuantity: 'No cuatity',
-    icon: 'fa-clipboard-list'
-}
+// SmallCard.defaultProps = {
+//     title: 'No Title',
+//     color: 'success',
+//     cuantity: 'No cuantity',
+//     icon: 'fa-clipboard-list'
+// }
 
-/* PROPTYPES */
+// /* PROPTYPES */
 
 SmallCard.propTypes = {
     atritutes: PropTypes.shape({
